@@ -1,38 +1,73 @@
 .App {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(12, 0, 53, 0.89);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color:cornsilk;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  max-width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#number {
+  font-size: 52px;
+  margin: 200px 0 0 0;
+  min-width: 300px;
+  max-width: 700px;
+  min-height: 200px;
+}
+
+#prompt-text {
+  font-size: 40px;
+}
+
+#numbers-input {
+  color: cornsilk;
+  font-size: 40px;
+  outline: none;
+  border: 1px solid rgba(13, 0, 56, 0.692);
+  background-color: rgb(55, 43, 97);
+  min-height: 30px;
+  max-width: 50px;
+  border-radius: 10%;
+  padding: 0 5px 0 5px;
+}
+#numbers-input::after {
+  content: '10 max';
+  font-size: 13px;
+}
+
+#buttons {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+#buttons button {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 61);
+  font-size: 15px;
+}
+
+#buttons button:hover {
+  cursor: pointer;
+}
+
+#history {
+  margin-top: 3%;
+  padding: 0 1%;
+  max-height: 350px;
+  overflow: auto;
+  background-color: rgb(55, 43, 97);
+}
+
+#history div {
+  margin: 0.5% 0;
 }
